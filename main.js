@@ -1,10 +1,8 @@
-function tocaSomPom() {
-    document.querySelector('#som_tecla_pom').play()
-}
-document.querySelector('.tecla_pom')
+const tocaSom = document.querySelectorAll('#som').play()
+const listaDeTeclas = document.querySelectorAll('.tecla')
 
-function tocaSomClap() {
-    document.querySelector('#som_tecla_clap').play()
+for(var count = 0; count <= listaDeTeclas.length; count++){
+    listaDeTeclas[count].onclick = tocaSom[count]
 }
-document.querySelector('.tecla_clap')
+
 
